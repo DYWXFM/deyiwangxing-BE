@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.deyiwangxing.dywxFM.dao.UserInfoMapper">
+    <resultMap id="BaseResultMap" type="UserInfo">
+        <id column="user_id" jdbcType="INTEGER" property="userId"/>
+        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+        <result column="sex" jdbcType="VARCHAR" property="sex"/>
+    </resultMap>
+
+    <sql id="table">
+      user_info
+    </sql>
+    <sql id="columns">
+      user_id,user_name,sex
+    </sql>
+
+    <select id="selectById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="columns"/>
+        from <include refid="table"/>
+        where user_id = #{id}
+    </select>
+
+
+
+</mapper>
