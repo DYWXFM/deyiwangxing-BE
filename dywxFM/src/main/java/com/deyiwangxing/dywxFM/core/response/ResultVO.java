@@ -1,6 +1,5 @@
 package com.deyiwangxing.dywxFM.core.response;
 
-import java.io.Serializable;
 
 /**
  * @Description: 返回对象实体

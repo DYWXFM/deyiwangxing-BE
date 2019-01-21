@@ -17,6 +17,9 @@ public enum ResponseCode {
     /** 未登录 */
     UNAUTHEN(4401),
 
+    /** not found */
+    NOT_FOUND(404),
+
     /** 未授权，拒绝访问 */
     UNAUTHZ(403),
 

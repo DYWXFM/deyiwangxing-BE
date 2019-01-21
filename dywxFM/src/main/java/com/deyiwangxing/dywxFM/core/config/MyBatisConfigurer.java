@@ -1,6 +1,5 @@
 package com.deyiwangxing.dywxFM.core.config;
 
-import com.deyiwangxing.dywxFM.core.constant.ProjectConstant;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
